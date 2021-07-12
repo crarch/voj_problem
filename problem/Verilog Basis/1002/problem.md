@@ -1,22 +1,23 @@
 ---
 title:点灯
-tid:1001
+tid:1002
+order:2
 ---
 
-下面这个电路输出的是0（低电平）
+下面这个电路输出的是1（高电平）
 ```wavedrom
 { signal: [
-  ["out",{ name: "a", wave: '0.......' }],
+  ["out",{ name: "a", wave: '1.......' }],
   {},
   ["ref",{ name: "a", wave: '1.......' }],
 ]}
 ```
 
-请修改示例代码让它输出1（高电平）
+请修改示例代码让它输出0（低电平）
 
 ```wavedrom
 { signal: [
-  ["out",{ name: "a", wave: '1.......' }],
+  ["out",{ name: "a", wave: '0.......' }],
   {},
   ["ref",{ name: "a", wave: '1.......' }],
 ]}
@@ -29,6 +30,6 @@ tid:1001
 module top_module(
     output a,
 );
-    assign a=0;
+    assign a=1;
 endmodule
 ```
