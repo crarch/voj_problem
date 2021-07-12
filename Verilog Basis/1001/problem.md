@@ -26,10 +26,10 @@ tid:1001
 你能帮帮我吗.jpg
 ![](/problem/1001/example.png)
 
-预估代码量：大约一行
+预估代码量：大约一行(不能再多辣!!!
 ```verilog
 module top_module(
-    output a,
+    output a
 );
     assign a=0;
 endmodule
