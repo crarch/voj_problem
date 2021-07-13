@@ -31,6 +31,6 @@ order:1
 module top_module(
     output a
 );
-    assign a=0;
+    assign a=0;//fix me
 endmodule
 ```
